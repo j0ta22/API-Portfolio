@@ -10,4 +10,5 @@ class Project(models.Model):
     description = models.TextField()
     created_at = models.DateTimeField(auto_now_add=True)
     image = ImageField(upload_to='portfolio/images/')
+    image_url = models.CharField(max_length=300)
     url = models.URLField(blank=True)
